@@ -1,0 +1,163 @@
+{
+  "company": {
+    "name": "Montogix Recruitment",
+    "tagline": "Connecting Top Talent with Leading Opportunities",
+    "description": "Montogix Recruitment is a leading recruitment firm specializing in connecting exceptional talent with innovative companies. We combine industry expertise with personalized service to deliver outstanding recruitment solutions.",
+    "email": "montogix@gmail.com"
+  },
+  "home": {
+    "hero": {
+      "title": "Your Future Starts Here",
+      "subtitle": "Expert Recruitment Solutions for Employers and Job Seekers",
+      "description": "We bridge the gap between talented professionals and leading organizations, creating lasting partnerships that drive success."
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "content": "With years of experience in the recruitment industry, Montogix Recruitment has established itself as a trusted partner for both businesses and job seekers. Our dedicated team of recruitment specialists understands the unique challenges of today's job market and works tirelessly to create perfect matches between candidates and companies.",
+      "values": [
+        "Excellence in Service",
+        "Integrity and Trust",
+        "Innovation in Recruitment",
+        "Client-Focused Approach"
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive recruitment solutions tailored to your needs",
+    "servicesList": [
+      {
+        "title": "Executive Search",
+        "description": "Specialized recruitment for senior-level and executive positions across industries."
+      },
+      {
+        "title": "Permanent Placement",
+        "description": "Full-time placement services for professionals at all career levels."
+      },
+      {
+        "title": "Contract Staffing",
+        "description": "Flexible staffing solutions for project-based and temporary needs."
+      },
+      {
+        "title": "HR Consulting",
+        "description": "Strategic HR advisory services to optimize your recruitment process."
+      }
+    ]
+  },
+  "careers": {
+    "title": "Join Our Team",
+    "description": "Build your career with Montogix Recruitment",
+    "benefits": [
+      "Competitive compensation package",
+      "Professional development opportunities",
+      "Work-life balance",
+      "Collaborative work environment"
+    ],
+    "openPositions": [
+      {
+        "title": "Senior Recruitment Consultant",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      {
+        "title": "HR Advisory Specialist",
+        "location": "Hybrid",
+        "type": "Full-time"
+      }
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "description": "Valuable insights and tools for your career journey",
+    "categories": [
+      {
+        "title": "Career Tips",
+        "items": [
+          "Resume Writing Guide",
+          "Interview Preparation",
+          "Salary Negotiation Tips",
+          "Career Development Strategies"
+        ]
+      },
+      {
+        "title": "Industry Insights",
+        "items": [
+          "Market Trends",
+          "Salary Guides",
+          "Industry Reports",
+          "Workplace Best Practices"
+        ]
+      }
+    ]
+  },
+  "jobListings": {
+    "title": "Current Opportunities",
+    "description": "Explore our latest job openings",
+    "categories": [
+      "Technology",
+      "Finance",
+      "Healthcare",
+      "Sales & Marketing",
+      "Operations"
+    ],
+    "featuredJobs": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Tech Innovation Corp",
+        "location": "Remote",
+        "type": "Full-time"
+      },
+      {
+        "title": "Financial Analyst",
+        "company": "Global Finance Ltd",
+        "location": "New York",
+        "type": "Full-time"
+      },
+      {
+        "title": "Marketing Manager",
+        "company": "Digital Solutions Inc",
+        "location": "San Francisco",
+        "type": "Full-time"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team",
+    "address": "123 Business Avenue, Suite 100",
+    "phone": "+1 (555) 123-4567",
+    "email": "montogix@gmail.com",
+    "formFields": [
+      {
+        "name": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true
+      }
+    ]
+  }
+} 
