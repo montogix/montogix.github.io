@@ -124,13 +124,13 @@ export default function Careers() {
         {/* Call to Action */}
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600 mb-4">
-            Don't see a position that matches your skills?
+            {content.ui.messages.dontSeePosition}
           </p>
           <a
             href="/contact"
             className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
           >
-            Send Us Your Resume
+            {content.ui.buttons.submitResume}
           </a>
         </div>
       </div>

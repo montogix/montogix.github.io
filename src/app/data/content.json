@@ -5,6 +5,32 @@
     "description": "Montogix Recruitment is a leading recruitment firm specializing in connecting exceptional talent with innovative companies. We combine industry expertise with personalized service to deliver outstanding recruitment solutions.",
     "email": "montogix@gmail.com"
   },
+  "ui": {
+    "buttons": {
+      "viewJobs": "View Jobs",
+      "contactUs": "Contact Us",
+      "applyNow": "Apply Now",
+      "submitResume": "Submit Your Resume",
+      "sendMessage": "Send Message",
+      "sendAnotherMessage": "Send another message"
+    },
+    "headings": {
+      "getInTouch": "Get in Touch",
+      "keyResponsibilities": "Key Responsibilities:",
+      "requirements": "Requirements:",
+      "ourValues": "Our Values"
+    },
+    "messages": {
+      "cantFind": "Can't find what you're looking for?",
+      "dontSeePosition": "Don't see a position that matches your skills?",
+      "thankYou": "Thank you for reaching out!",
+      "thankYouMessage": "Thank you for your message!",
+      "willGetBack": "We'll get back to you as soon as possible."
+    },
+    "placeholders": {
+      "messageHelp": "How can we help you?"
+    }
+  },
   "home": {
     "hero": {
       "title": "Your Future Starts Here",
@@ -158,6 +184,20 @@
         "type": "textarea",
         "required": true
       }
+    ]
+  },
+  "jobDetails": {
+    "responsibilities": [
+      "Lead and manage project development lifecycle",
+      "Collaborate with cross-functional teams",
+      "Implement best practices and standards",
+      "Mentor junior team members"
+    ],
+    "requirements": [
+      "5+ years of relevant experience",
+      "Strong communication skills",
+      "Problem-solving abilities",
+      "Team player mindset"
     ]
   }
 } 

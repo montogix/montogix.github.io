@@ -61,7 +61,7 @@ export default function Contact() {
           <div>
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Get in Touch
+                {content.ui.headings.getInTouch}
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -196,29 +196,16 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Thank you for your message!
+                  {content.ui.messages.thankYouMessage}
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  We'll get back to you as soon as possible.
+                  {content.ui.messages.willGetBack}
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
                 >
-                  <svg
-                    className="w-4 h-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
-                  Send another message
+                  {content.ui.buttons.sendAnotherMessage}
                 </button>
               </div>
             ) : (
@@ -271,7 +258,7 @@ export default function Contact() {
                         }
                         rows={4}
                         className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 bg-gray-50 text-gray-900"
-                        placeholder="How can we help you?"
+                        placeholder={content.ui.placeholders.messageHelp}
                       />
                     </div>
                   ))}
@@ -280,20 +267,7 @@ export default function Contact() {
                     type="submit"
                     className="w-full bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors flex items-center justify-center"
                   >
-                    <svg
-                      className="w-5 h-5 mr-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    Send Message
+                    {content.ui.buttons.sendMessage}
                   </button>
                 </div>
               </form>

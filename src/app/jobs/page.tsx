@@ -109,7 +109,7 @@ export default function JobListings() {
                       href="/contact"
                       className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
                     >
-                      Apply Now
+                      {content.ui.buttons.applyNow}
                       <svg
                         className="ml-2 -mr-1 h-4 w-4"
                         fill="none"
@@ -128,25 +128,23 @@ export default function JobListings() {
 
                   <div className="mt-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Key Responsibilities:
+                      {content.ui.headings.keyResponsibilities}
                     </h3>
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
-                      <li>Lead and manage project development lifecycle</li>
-                      <li>Collaborate with cross-functional teams</li>
-                      <li>Implement best practices and standards</li>
-                      <li>Mentor junior team members</li>
+                      {content.jobDetails.responsibilities.map((resp, idx) => (
+                        <li key={idx}>{resp}</li>
+                      ))}
                     </ul>
                   </div>
 
                   <div className="mt-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Requirements:
+                      {content.ui.headings.requirements}
                     </h3>
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
-                      <li>5+ years of relevant experience</li>
-                      <li>Strong communication skills</li>
-                      <li>Problem-solving abilities</li>
-                      <li>Team player mindset</li>
+                      {content.jobDetails.requirements.map((req, idx) => (
+                        <li key={idx}>{req}</li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -157,13 +155,13 @@ export default function JobListings() {
         {/* Call to Action */}
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600 mb-4">
-            Can't find what you're looking for?
+            {content.ui.messages.cantFind}
           </p>
           <a
             href="/contact"
             className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
           >
-            Submit Your Resume
+            {content.ui.buttons.submitResume}
           </a>
         </div>
       </div>

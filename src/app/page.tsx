@@ -66,13 +66,13 @@ export default function Home() {
                 href="/jobs"
                 className="bg-white text-gray-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors"
               >
-                View Jobs
+                {content.ui.buttons.viewJobs}
               </Link>
               <Link
                 href="/contact"
                 className="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-gray-900 transition-colors"
               >
-                Contact Us
+                {content.ui.buttons.contactUs}
               </Link>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900">Our Values</h3>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">{content.ui.headings.ourValues}</h3>
               <ul className="space-y-4">
                 {content.home.aboutUs.values.map((value, index) => (
                   <li key={index} className="flex items-center text-gray-700">
@@ -148,7 +148,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Get in Touch</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">{content.ui.headings.getInTouch}</h2>
             {isSubmitted ? (
               <div className="text-center py-8">
                 <div className="bg-green-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -167,29 +167,16 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-medium text-gray-900 mb-2">
-                  Thank you for reaching out!
+                  {content.ui.messages.thankYou}
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  We'll get back to you as soon as possible.
+                  {content.ui.messages.willGetBack}
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
                 >
-                  <svg
-                    className="w-4 h-4 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
-                  Send another message
+                  {content.ui.buttons.sendAnotherMessage}
                 </button>
               </div>
             ) : (
@@ -242,7 +229,7 @@ export default function Home() {
                         }
                         rows={4}
                         className="w-full px-4 py-2 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 bg-gray-50 text-gray-900"
-                        placeholder="How can we help you?"
+                        placeholder={content.ui.placeholders.messageHelp}
                       />
                     </div>
                   ))}
@@ -251,20 +238,7 @@ export default function Home() {
                     type="submit"
                     className="w-full bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors flex items-center justify-center"
                   >
-                    <svg
-                      className="w-5 h-5 mr-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    Send Message
+                    {content.ui.buttons.sendMessage}
                   </button>
                 </div>
               </form>
